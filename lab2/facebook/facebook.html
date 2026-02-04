@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" href="/Users/ruslanmyrzabaev/Desktop/web development /references/i.webp" type="png"
+    >
+    <style>
+        body{
+            background-color:#f3f3fa ;
+        }
+        #face{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            letter-spacing: normal;
+            font-weight:430;
+        }
+        #d1{
+            width: 500px;
+            height: 120px;
+        }
+        #for_lang li ,#for_other li{
+            list-style-type: none;
+            
+        }
+
+        #for_lang li a,#for_other li a{
+            text-decoration:none;
+            color: rgb(89, 89, 89);
+        }
+        #for_lang{
+            display: flex;
+            gap: 7px;
+            font-size: 14px;
+        }
+        #for_other{
+            display:flex;
+            font-size: 14px;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+        #left_section{
+            margin-top: 170px;
+            margin-bottom:0;
+            margin-left: 150px;
+            margin-right: 50px;
+            width:450px;
+        }
+        #d1{
+            margin-top:-40px;
+        }
+        #img{
+            margin-left:-30px;
+            
+        }
+        #for_square{
+            
+            width: 400px;
+            height: 420px;
+            margin-left: 700px;
+            margin-top: -250px;
+            margin-bottom:180px;
+            
+            
+        }
+        #email{
+            width:366px;
+            height: 51px;
+            margin-left: 13px;
+            margin-right: 13px;
+            margin-bottom: 7px;
+            margin-top: 15px;
+            border-radius: 4px;
+            border: 1px solid rgb(234, 232, 232);
+
+
+        }
+        #password{
+            width:366px;
+            height: 51px;
+            margin-left: 13px;
+            margin-right: 13px;
+            margin-bottom: 7px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid rgb(234, 232, 232);
+
+
+        }
+        #for_вход{
+            text-align: center;
+            width: 366px;
+            height: 51px;
+            margin-top:10px;
+            margin-bottom: 15px;
+        }
+        #for_вход button{
+            width: 373px;
+            height: 51px;
+            margin-left: 13px;
+            margin-right: 13px;
+            border-radius:6px;
+            font-weight: bold;
+            font-size: large;
+            color: #FFFF;
+            background-color: #0866ff;
+            border: none;
+            cursor: pointer;
+        }
+        #for_вход button:hover{
+            background-color:#085fea
+        }
+        #for_забыли_пороль{
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        #for_забыли_пороль a{
+            text-decoration:none;
+            color: #0866ff;
+            font-size: 14px;
+            font-weight:bold
+            ;
+
+        }
+        #forb2{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            
+        }
+        #Создать_новый:hover{
+            background-color: #3ba526;
+        }
+        #Создать_новый{
+            width: 235px;
+            height: 51px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #42b72a;
+            color:#FFFF;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+        hr{
+            margin-left: 5px;
+            margin-right: 5px;
+
+        }
+        #A{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            border: none;
+            border-radius: 10px;
+        }
+        
+        #br{
+            margin-top: 10px;
+        }
+        #forb3{
+            margin-top: 25px;
+        }
+        #C{
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            
+        }
+        #forb3{
+            margin-left: 10px;
+            text-align: center;
+        }
+        #footer{
+            background-color: #FFFF;
+
+        }
+        #for_lang{
+            margin-bottom:10px;
+            margin-left: 60px;
+            
+        }
+        #for_other{
+            margin-left: 60px;
+        }
+        #hh{
+            margin-left: 100px;
+            margin-right: 60px;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div id = left_section>
+        <div id="img">
+            <img src="/Users/ruslanmyrzabaev/Desktop/web development /references/face_word.svg" alt=""
+            width="340px">
+
+        </div>
+        
+    <div id="d1">
+    <h2 id="face">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+    </div>
+    </div>
+
+    <div id="for_square">
+        <div id = "A">
+            <form action="" id="tillСоздатьНовыйАкк">
+                <div id = for_email><input type="text" id="email" placeholder="Электронный адрес или номер телефона" autofocus="1"></div>
+
+                <div id="for_password">
+                    <input type="password" id="password" placeholder="Пароль">
+                </div>
+
+                <div id="for_вход">
+                    <button value="1" type="submit">
+                        Вход
+                    </button>
+                </div>
+
+                <div id="for_забыли_пороль">
+                    <a href="">Забыли пароль?</a>
+                </div>
+                <hr>
+                <!-- <hr width="200"> div пене істеп кор болмаса-->
+                
+                <div id="forb2">
+                    <button id="Создать_новый">
+                        Создать новый аккаунт
+                    </button>
+                </div>
+                <br id="br">
+
+            </form>
+        </div>
+        <div id="forb3">
+            <a  id ="C"href="">Создать страницу</a> знаменитости,музыкальной группы или компании.
+        </div>
+    </div>
+    <footer id="footer">
+        <br>
+        <div class="foot">
+            <ul id = for_lang>
+                <li><a href="">Қазақша</a></li>
+                <li><a href="">Русский</a></li>
+                <li><a href="">English (US)</a></li>
+                <li><a href="">Türkçe</a></li>
+                <li><a href="">Bahasa Indonesia</a></li>
+                <li><a href="">中文(简体)</a></li>    
+                <li><a href="">Deutsch</a></li>
+                <li><a href="">한국어</a></li>
+                <li><a href="">Shqip</a></li>
+                <li><a href="">Español</a></li>
+                <li><a href="">Português (Brasil)</a></li>
+                <li><a href=""><button>+</button></a></li>
+            </ul>
+            <hr id ="hh">
+            <div class="foot">
+            <ul id="for_other">
+                <li><a href="">Зарегистрироваться</a></li>
+                <li><a href="">Вход</a></li>
+                <li><a href="">Messenger</a></li>
+                <li><a href="">Facebook lite</a></li>
+                <li><a href="">Видео</a></li>
+                <li><a href="">Meta Pay</a></li>
+                <li><a href="">Магазин Meta</a></li>
+                <li><a href=""> Metd Quest</a></li>
+                <li><a href="">Ray-Ban Meta</a></li>
+                <li><a href="">Meta AI</a></li>
+                <li><a href="">Больше контента от Meta AI</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Threads</a></li>
+                <li><a href="">Центр информации о выборах</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Центр конфиденциальности</a></li>
+                <li><a href="">Информация</a></li>
+                <li><a href="">Создать рекламу</a></li>
+                <li><a href="">Создать Страницу</a></li>
+                <li><a href="">Разработчикам</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Файлы cookie</a></li>
+                <li><a href="">Рекламные предпочтения</a></li>
+                <li><a href=""> Условия использования</a></li>
+                <li><a href=""> Справка</a></li>
+                <li><a href="">Загрузка контактов и лица, не являющиеся пользователями</a></li>
+                <br>
+                <li><a href="">Meta © 2026 </a></li>
+            </ul>
+            </div>
+            
+        </div>
+        <br>
+    </footer>
+
+
+</body>
+</html>

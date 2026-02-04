@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            #f{
+                width:400;
+            }
+        </style>
+    </head>    
+    <body>
+        <a href="index.html">Go back</a>
+
+        <h1>Registration form</h1>
+
+        <form action="">
+            <fieldset id="f">
+                <label for="username">Username:</label>
+                <input type="text" 
+                id="username" 
+                name="username"
+                placeholder="Enter your username"
+                required
+                autofocus
+                ><br/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br/>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br/>
+                <label for="phone">Phone:</label>
+                <input type="tel" 
+                id="phone" 
+                name="phone"
+                pattern="\+7\d{10}"
+                ><br/>
+                <label for="gender">Gender:</label>
+                <label for="male">Male:</label>
+                <input type="radio" id="male" name="gender">
+                <label for="female">Female:</label>
+                <input type="radio" id="female" name="gender"> <br />
+                <label for="agree">Do you agree to the terms ?</label>
+                <input type="checkbox" id="agree" name="agree"><br/>
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option value="city1">Almaty</option>
+                    <option value="city2">Astana</option>
+                    <option value="city3">Shymkent</option>
+                </select>
+                <br/>
+                <label for="bio">Bio:</label><br/>
+                <textarea id="bio" name="bio" rows="4" cols="30"
+                placeholder="Tell us about yourself"></textarea>
+
+                <br/>
+
+                <input type="color">
+                <input type="range" min="0" max="100" step="10">
+                <input type="date">
+                <input type="datetime-local">
+                <input type="time">
+                <input type="month">
+                <input type="week">
+
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        
+
+        <footer>
+
+        </footer>
+        <!-- <div class="footer">
+            Footer
+        </div> -->
+    </body>
+</html>
