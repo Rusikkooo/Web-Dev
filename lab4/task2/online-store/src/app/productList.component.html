@@ -1,0 +1,30 @@
+
+<div class="outcon">
+    @for (product of products; track product.id) {
+    <div class = con>
+        <div id = "productImage">
+        <img  [src]="product.image" width="100" />
+        </div>
+        <hr width="380px">
+        <div class="images">
+            @for (img of product.images; track img) {
+                <img [src]="img" width=90 height="90" />
+                    
+            }
+        </div>
+        <hr width="380">
+
+        <div id = "productName"><h3>{{ product.name }}</h3></div>
+        <p id="des">{{ product.description }}</p>
+
+        <h4 id = "price"> <span id="PPP">Price:</span>{{ product.price }} ₸</h4>
+        <div >
+            <span id = "Rat">Rating:</span> {{ product.rating }}⭐
+            <div id="cRating">
+                
+                <button class = "telegram" (click)="shareToTelegram(product)">Share</button>
+                <button class = "telegram "id=link (click)="link(product)">Link </button>
+            </div> 
+        </div>
+        </div>
+        }</div>
