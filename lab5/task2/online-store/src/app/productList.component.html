@@ -1,0 +1,43 @@
+
+<div class="outcon">
+    @for (p of PRODUCTS; track PRODUCTS.id) {
+        
+    
+    <div class = con>
+        <div id = "productImage">
+        <img  [src]="p.image" width="100" />
+        </div>
+        <hr width="380px">
+        <div class="images">
+            @for (img of PRODUCTS.images; track img) {
+                <img [src]="img" width=90 height="90" />
+                    
+            }
+        </div>
+        <hr width="380">
+
+        <div id = "productName"><h3>{{ p.name }}</h3></div>
+        <p id="des">{{ p.description }}</p>
+
+        <h4 id = "price"> <span id="PPP">Price:</span>{{ p.price }} ₸</h4>
+        <div >
+            <span id = "Rat">Rating:</span> {{ p.rating }}⭐
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="cRating">
+                
+            <div id = 'rrr'><app-product-item 
+                        [product]="p" 
+                        (delete)="deleteProduct($event)">
+            </app-product-item></div>
+                <button class = "telegram" (click)="shareToTelegram(p)">Share</button>
+                <button class = "telegram "id=link (click)="link(p) ">Link </button>
+                
+            </div> 
+        </div>
+        </div>
+        }@empty {
+        <p>Бұл категорияда тауар қалмады.</p>
+    }</div>

@@ -1,0 +1,27 @@
+
+
+<button id="delete" (click)="onDelete()">Delete</button>
+<button id="like"(click)="onLike()">❤️:{{likes()}}</button>
+<style>
+
+    #delete{
+        margin-right: 10px;
+    margin-top: -40px;
+    background-color: #d9bd1d; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    }
+    #delete:hover{
+        background-color: #a79009;
+    }
+    
+    
+</style>
