@@ -1,0 +1,34 @@
+<div class="page-header">
+  <h1>Albums</h1>
+  <button class="btn-outline" (click)="load()" *ngIf="!isLoading">Refresh</button>
+</div>
+
+<div class="loading" *ngIf="isLoading">
+  <div class="spinner"></div>
+  <span>Loading albums...</span>
+</div>
+
+<div class="error" *ngIf="error">
+  <p>{{ error }}</p>
+  <button (click)="load()">Retry</button>
+</div>
+
+<div *ngIf="!isLoading && !error">
+  <p class="count">{{ albums.length }} albums</p>
+
+  <div class="album-list">
+    <div class="album-row" *ngFor="let album of albums" (click)="goTo(album.id)">
+      <span class="album-id">#{{ album.id }}</span>
+      <span class="album-title">{{ album.title }}</span>
+      <div class="album-actions">
+        <button class="btn-view" (click)="goTo(album.id)">View</button>
+        <button class="btn-delete" (click)="delete($event, album.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty" *ngIf="albums.length === 0">
+    <p>No albums left.</p>
+    <button (click)="load()">Reload</button>
+  </div>
+</div>

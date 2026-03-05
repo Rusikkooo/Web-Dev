@@ -1,0 +1,88 @@
+.page-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  color: #111;
+}
+
+.about-card, .info-card, .features-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-card h2, .info-card h3, .features-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.about-card p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-card a {
+  color: #2563eb;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+table { width: 100%; border-collapse: collapse; }
+td { padding: 0.4rem 0; font-size: 0.88rem; color: #444; border-bottom: 1px solid #f3f4f6; }
+td.label { color: #888; width: 80px; }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tags span {
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.features-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.features-card li {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn:hover { background: #1d4ed8; }
+
+@media (max-width: 600px) {
+  .info-grid { grid-template-columns: 1fr; }
+}

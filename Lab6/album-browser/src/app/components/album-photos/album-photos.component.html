@@ -1,0 +1,33 @@
+<div class="loading" *ngIf="isLoading">
+  <div class="spinner"></div>
+  <span>Loading photos...</span>
+</div>
+
+<div class="error" *ngIf="error">
+  <p>{{ error }}</p>
+  <button (click)="goBack()">← Back</button>
+</div>
+
+<div *ngIf="!isLoading && !error">
+  <button class="btn-back" (click)="goBack()">← Album #{{ albumId }}</button>
+
+  <div class="page-header">
+    <h1>Photos</h1>
+    <span class="count">{{ photos.length }} photos</span>
+  </div>
+
+  <div class="empty" *ngIf="photos.length === 0">
+    <p>No photos found.</p>
+  </div>
+
+  <div class="grid" *ngIf="photos.length > 0">
+    <div class="photo-card" *ngFor="let photo of photos">
+      <img [src]="photo.thumbnailUrl" [alt]="photo.title" loading="lazy" />
+      <p class="photo-title">{{ photo.title }}</p>
+    </div>
+  </div>
+
+  <button class="btn-back-bottom" (click)="goBack()" *ngIf="photos.length > 0">
+    ← Back to Album #{{ albumId }}
+  </button>
+</div>
